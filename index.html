@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Vico Graphics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Vico Graphics</h1>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<!-- Carrusel -->
+<section id="inicio" class="carousel">
+    <div class="slides">
+        <img src="https://picsum.photos/1000/400?1" class="active">
+        <img src="https://picsum.photos/1000/400?2">
+        <img src="https://picsum.photos/1000/400?3">
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</section>
+
+<!-- Sobre mí -->
+<section id="sobre-mi" class="section">
+    <h2>Sobre mí</h2>
+    <p>Soy diseñador gráfico enfocado en branding, editorial y contenido para redes.</p>
+</section>
+
+<!-- Proyectos -->
+<section id="proyectos" class="section">
+    <h2>Mis Proyectos</h2>
+    <div class="grid">
+        <button onclick="irAProyecto('p1')" class="card">Proyecto 1</button>
+        <button onclick="irAProyecto('p2')" class="card">Proyecto 2</button>
+        <button onclick="irAProyecto('p3')" class="card">Proyecto 3</button>
+    </div>
+</section>
+
+<!-- PROYECTO 1 -->
+ <section id="p1" class="proyecto-detalle">
+    <h2>Proyecto 1</h2>
+    <div class="galeria">
+        <img src="https://picsum.photos/300?1">
+        <img src="https://picsum.photos/300?2">
+        <img src="https://picsum.photos/300?3">
+    </div>
+</section>
+
+<!-- PROYECTO 2 -->
+ <section id="p2" class="proyecto-detalle">
+    <h2>Proyecto 2</h2>
+    <div class="galeria">
+        <img src="https://picsum.photos/300?4">
+        <img src="https://picsum.photos/300?5">
+        <img src="https://picsum.photos/300?6">
+    </div>
+</section>
+
+<!-- PROYECTO 3 -->
+ <section id="p3" class="proyecto-detalle">
+    <h2>Proyecto 3</h2>
+    <div class="galeria">
+        <img src="https://picsum.photos/300?7">
+        <img src="https://picsum.photos/300?8">
+        <img src="https://picsum.photos/300?9">
+    </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p>Email: victor.alcocer43@uabc.edu.mx</p>
+</section>
+
+<footer>
+    <p>© 2026 vicographics</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
