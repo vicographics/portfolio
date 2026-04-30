@@ -18,14 +18,21 @@
 </header>
 
 <!-- Carrusel -->
-<section id="inicio" class="carousel">
-    <div class="slides">
-        <img src="https://picsum.photos/1000/400?1" class="active">
-        <img src="https://picsum.photos/1000/400?2">
-        <img src="https://picsum.photos/1000/400?3">
+<section class="carousel-container">
+    <div class="carousel-track" id="carousel">
+        <img src="Images/Artboard 1-700.jpg" class="slide active">
+        <img src="Images/Artboard 2-700.jpg" class="slide">
+        <img src="Images/Artboard 3-700.jpg" class="slide">
     </div>
-    <button class="prev">&#10094;</button>
-    <button class="next">&#10095;</button>
+    <!-- Botones -->
+    <button class="btn prev" onclick="moveSlide(-1)">❮</button>
+    <button class="btn next" onclick="moveSlide(1)">❯</button>
+    <!-- Indicadores -->
+    <div class="dots">
+        <span onclick="currentSlide(0)" class="dot active"></span>
+        <span onclick="currentSlide(1)" class="dot"></span>
+        <span onclick="currentSlide(2)" class="dot"></span>
+    </div>
 </section>
 
 <!-- Sobre mí -->
