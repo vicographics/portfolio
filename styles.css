@@ -1,20 +1,27 @@
 body {
-    margin: 0;
+    margin: 0px 5px;
     font-family: Helvetica, sans-serif;
+    letter-spacing: -0.5px;
     background: white;
     color: black;
 }
 
 /* Header */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: white;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 0 7px;
     color: black;
     text-decoration: none;
 }
@@ -27,10 +34,10 @@ nav a {
 
 .carousel-container {
     position: relative;
-    max-width: 800px;
+    max-width: 100%;
     margin: auto;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 0;
 }
 
 .carousel-track {
@@ -41,6 +48,7 @@ nav a {
     min-width: 100%;
     display: none;
     transition: opacity 0.5s;
+
 }
 
 .slide.active {
@@ -52,12 +60,14 @@ nav a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: none;
     color: white;
     padding: 10px;
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
 .prev { left: 10px; }
@@ -124,7 +134,7 @@ nav a {
     background: white;
     color: black;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 0;
     transition: transform 0.3s;
 }
 
@@ -136,7 +146,7 @@ nav a {
     padding: 60px;
     background: rgba(255,255,255,0.1);
     margin: 20px;
-    border-radius: 15px;
+    border-radius: 0;
 }
 
 .galeria {
@@ -148,11 +158,17 @@ nav a {
 
 .galeria img {
     width: 250px;
-    border-radius: 10px;
+    border-radius: 0;
     transition: transform 0.3s;
     cursor: pointer;
 }
 
 .galeria img:hover {
     transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    font-size: 10px;
+    text-align: center;
 }
