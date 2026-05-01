@@ -6,11 +6,6 @@ body {
     color: black;
 }
 
-@media (max-width: 768px) {
-  .contenedor-columnas {
-    flex-direction: column;
-}
-
 /* Header */
 header {
     position: sticky;
